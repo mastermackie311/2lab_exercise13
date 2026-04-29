@@ -38,7 +38,7 @@ while True:
     def itemCheckout():
         with open("shopee.txt", "r") as file:
             content = file.read()
-            print("\n--- Checkout ---")
+            print("\n--= Checkout =--")
             totalPrice = 0
             for line in content.splitlines():
                 if "Price: " in line and "Quantity: " in line:
