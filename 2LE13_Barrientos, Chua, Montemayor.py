@@ -43,8 +43,7 @@ while True:
             for line in content.splitlines():
                 if "Price: " in line and "Quantity: " in line:
                     price = float(line.split("Price: ")[1])
-                    quantity = int(line.split("Quantity: ")[1].split(",")[0])
-                    totalPrice += price * quantity
+                    totalPrice += price
             print(content)
             print(f"Total price: {totalPrice}")
             print("Thank you for shopping with us!")
